@@ -64,6 +64,24 @@ app.delete('/cache/:key', (req, res) => {
     res.json({ message: 'Cache deleted' });
 });
 
+// Easter egg route
+app.get('/easter-egg', (req, res) => {
+    const easterEgg = {
+        message: "Congratulations! You've found the Easter egg!",
+        hint: "The key to success is consistency and perseverance.",
+        asciiArt: `
+                   | |              
+   ___  __ _   ___ | |_  _ __  ___  
+  / __|/ _ | / __|| __|| '__|/  _  \ 
+ | (__| (_| || (__ | |_ | |  | (_) |
+  \___|\__,_| \___| \__||_|   \___/ 
+                                    
+                                                               
+        `
+    };
+    res.json(easterEgg);
+});
+
 app.get('/', (req, res) => {
     res.json({ status: 'ok' });
 });
