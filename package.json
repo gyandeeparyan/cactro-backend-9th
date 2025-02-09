@@ -1,0 +1,29 @@
+{
+  "name": "cactro_backend_assignment_gyandeep_aryan",
+  "version": "1.0.0",
+  "description": "cactro hiring assignment_9th_februrary",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+    
+  },
+  "keywords": [
+    "cactro",
+    "swapnil",
+    "gyandeep",
+    "aryan",
+    "backend",
+    "express",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Gyandeep Aryan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}
